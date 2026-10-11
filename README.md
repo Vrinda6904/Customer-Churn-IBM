@@ -1,13 +1,13 @@
 ## Final Output
 
-This project successfully built a machine learning pipeline to predict customer churn, achieving strong accuracy with both Logistic Regression (85.8%) and Random Forest (85.3%) models. While Logistic Regression edged out slightly on overall accuracy, Random Forest was used for deeper evaluation due to its ability to capture non-linear patterns and provide feature importance insights.
+This project developed an end-to-end machine learning pipeline to predict customer churn using the IBM Telco Customer Churn dataset. Logistic Regression achieved 85.8% accuracy, while Random Forest achieved 85.3%. Although Logistic Regression performed slightly better in overall accuracy, Random Forest was explored further for its ability to capture non-linear relationships and identify important features influencing churn.
 
-The model performs well at identifying customers who stay (92% recall for class 0), but has more room to improve at catching customers who actually churn (66% recall for class 1).
+The evaluation showed that the models were more effective at identifying customers who stayed (92% recall for class 0) than customers who churned (66% recall for class 1), highlighting opportunities to improve churn detection.
 
-Key churn drivers identified:
-- Contract type – Month-to-month customers churn significantly more than those on long-term contracts.
-- Tenure – Newer customers are more likely to leave.
-- Monthly charge – Higher bills are linked to higher churn risk.
-- Support services – Customers without tech support or security add-ons churn more often.
+**Key factors influencing customer churn:**
+- **Contract Type:** Customers on month-to-month contracts were more likely to churn than those with long-term contracts.
+- **Tenure:** Customers with shorter relationships with the company showed a higher likelihood of leaving.
+- **Monthly Charges:** Higher monthly bills were associated with increased churn risk.
+- **Support Services:** Customers without technical support or online security services were more likely to churn.
 
-## Business Recommendation: To reduce churn, the company should prioritize converting month-to-month customers to longer contracts, strengthen onboarding for new customers, and offer tech support/security bundles. Especially to high-paying customers on flexible plans.
+**Business Recommendations:** The company should encourage month-to-month customers to switch to longer-term contracts, strengthen onboarding and engagement for new customers, and offer technical support and online security bundles. Targeted retention offers for high-paying customers on flexible contracts could also help reduce churn.
